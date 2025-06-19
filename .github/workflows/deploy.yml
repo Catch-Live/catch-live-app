@@ -27,10 +27,8 @@ jobs:
         run: |
           npm install
           npm run build
-
-      - name: 빌드한 파일 S3에 업로드
-        run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET_NAME }} --acl public-read
         env:
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
           VITE_KAKAO_CLIENT_ID: ${{ secrets.VITE_KAKAO_CLIENT_ID }}
           VITE_KAKAO_REDIRECT_URI: ${{ secrets.VITE_KAKAO_REDIRECT_URI }}
           VITE_NAVER_CLIENT_ID: ${{ secrets.VITE_NAVER_CLIENT_ID }}
@@ -38,6 +36,10 @@ jobs:
           VITE_NAVER_STATE: ${{ secrets.VITE_NAVER_STATE }}
           VITE_GOOGLE_CLIENT_ID: ${{ secrets.VITE_GOOGLE_CLIENT_ID }}
           VITE_GOOGLE_REDIRECT_URI: ${{ secrets.VITE_GOOGLE_REDIRECT_URI }}
+
+      - name: 빌드한 파일 S3에 업로드
+        run: aws s3 sync dist/ s3://${{ secrets.S3_BUCKET_NAME }}
+        env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
