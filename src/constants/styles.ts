@@ -18,15 +18,18 @@ export const LAYOUT_STYLE = {
 
 //profile styles
 export const PROFILE_STYLE = {
-  background: 'flex-1 flex flex-col justify-center items-center',
+  background:
+    'min-h-screen flex flex-col items-center justify-center px-4 py-10',
   info_list:
-    'flex flex-col w-full max-w-md bg-gray-100 rounded-xl m-4 p-4 gap-4',
+    'w-full max-w-2xl bg-white rounded-xl shadow-md px-8 py-12 space-y-8 min-h-[300px]',
   info_item: 'flex justify-between items-center',
-  info_label: 'text-gray-500 font-medium',
-  info_value: 'font-bold text-gray-900 text-right',
-  button_box: 'flex w-fit flex-row justify-center items-center gap-20',
-  button:
-    'flex-1 text-center rounded-xl text-lg font-bold text-gray-700 bg-purple-100 py-3 hover:bg-purple-300 transition',
+  info_label: 'text-gray-600 font-medium text-lg',
+  info_value: 'text-gray-900 font-semibold text-right text-lg',
+  button_box: 'mt-10 flex gap-6',
+  logout_button:
+    'bg-gray-200 text-gray-700 font-bold rounded-md w-24 h-11 hover:bg-gray-300 transition',
+  signout_button:
+    'bg-purple-600 text-white font-bold rounded-md w-24 h-11 hover:bg-purple-700 transition',
 };
 
 //notification styles

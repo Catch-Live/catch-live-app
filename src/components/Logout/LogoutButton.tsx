@@ -36,7 +36,7 @@ export function LogOutButton() {
 
   return (
     <>
-      <button onClick={handleLogout} className={style.button}>
+      <button onClick={handleLogout} className={style.logout_button}>
         로그아웃
       </button>
       {alertMessage && (
