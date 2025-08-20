@@ -1,0 +1,223 @@
+//navigationBar styles
+export const NAVIGATION_STYLE = {
+  background:
+    'flex justify-center w-full max-w-screen-md h-16 bg-purple-500 shadow-xl z-10 rounded-t-xl',
+  buttonList: 'flex w-full h-full items-center',
+  button: 'flex-1 flex flex-col',
+  buttonImage: 'h-6 md:h-8 object-contain',
+  buttonText: 'text-xs mt-1 font-bold',
+};
+
+//Layout styles
+export const LAYOUT_STYLE = {
+  screenLayout: 'h-screen flex flex-col items-center',
+  mainContainer:
+    'flex-1 flex justify-center w-full max-w-screen-md min-h-0 pb-4',
+  pageContent: 'flex-1 flex flex-col w-full max-w-screen-md min-h-0 mt-4',
+};
+
+//profile styles
+export const PROFILE_STYLE = {
+  background:
+    'min-h-screen flex flex-col items-center justify-center px-4 py-10',
+  info_list:
+    'w-full max-w-2xl bg-white rounded-xl shadow-md px-8 py-12 space-y-8 min-h-[300px]',
+  info_item: 'flex justify-between items-center',
+  info_label: 'text-gray-600 font-medium text-lg',
+  info_value: 'text-gray-900 font-semibold text-right text-lg',
+  button_box: 'mt-10 flex gap-6',
+  logout_button:
+    'bg-gray-200 text-gray-700 font-bold rounded-md w-24 h-11 hover:bg-gray-300 transition',
+  signout_button:
+    'bg-purple-600 text-white font-bold rounded-md w-24 h-11 hover:bg-purple-700 transition',
+};
+
+//notification styles
+export const NOTIFICATION_STYLE = {
+  item_list:
+    'flex-1 flex flex-col w-full max-w-screen-md hide-scrollbar overflow-y-auto overscroll-none items-center scrollbar-hide',
+  item: 'w-full min-h-[70px] rounded-lg border border-gray-200 flex justify-between items-center my-1',
+  item_info: 'text-base font-semibold text-gray-900 p-3',
+  item_time: 'text-s text-gray-400 p-3',
+};
+
+//Recording styles
+export const RECORDING_STYLE = {
+  headerContainer: 'text-3xl font-bold text-center mb-2',
+  pannelContainer: 'flex justify-between gap-1 items-center mb-2',
+  body: 'flex-1 flex flex-col space-y-4 min-h-0 overflow-y-auto overscroll-none scrollbar-hide',
+};
+
+//RecordingItem styles
+export const RECORDING_ITEM_STYLE = {
+  header: 'flex items-start justify-between',
+  container: 'flex flex-col gap-1 p-4 rounded-xl shadow-sm border bg-white',
+  headerLeft: 'flex items-center gap-2',
+  liveDot: 'w-3 h-3 rounded-full',
+  liveText: 'text-xs font-semibold text-black-600',
+  platformText: 'text-xs font-semibold text-purple-600',
+  dateText: 'text-xs text-gray-400',
+
+  titleRow: 'flex items-center justify-between',
+  titleText: 'text-base font-bold',
+  statusBadge: 'px-2 py-0.5 text-xs rounded-full',
+  footer: 'flex items-center justify-between',
+  channelText: 'text-sm text-gray-600',
+  downloadButton:
+    'w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform duration-200',
+  downloadIcon: 'w-6 h-6 text-gray-700',
+  disable: 'opacity-50 cursor-not-allowed',
+
+  liveStatus: 'bg-red-500',
+  offlineStatus: 'bg-gray-500',
+  completedStatus: 'bg-green-100 text-green-700',
+  recordingStatus: 'bg-yellow-100  text-yellow-700',
+  failedStatus: 'bg-red-200 text-red-700',
+};
+
+//Header styles
+export const HEADER_STYLE = {
+  titleContainer: 'p-4 pb-2',
+  titleText: 'text-3xl font-bold text-center mb-2',
+};
+
+//SearchBar styles
+export const SEARCH_BAR_STYLE = {
+  container: 'pb-2',
+  input:
+    'w-full rounded-xl text-lg px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500',
+};
+
+//FilterButton styles
+export const FILTER_BUTTON_STYLE = {
+  button:
+    'w-1/2 flex items-center gap-1 px-4 py-2 rounded-xl border border-gray-300 text-sm',
+};
+
+//SortButton styles
+export const SORT_BUTTON_STYLE = {
+  button:
+    'w-1/2 flex items-center gap-1 px-4 py-2 rounded-xl border border-gray-300 text-sm',
+};
+
+//LoadingSpinner styles
+export const LOADING_SPINNER_STYLE = {
+  container: 'flex justify-center items-center h-48',
+  button: 'animate-spin rounded-full border-4 border-solid border-gray-200',
+};
+
+export const LOGIN_STYLE = {
+  loginBox: 'flex flex-col items-center justify-center h-screen',
+  paragraph: 'text-gray-500 mb-6',
+  buttonBox: 'flex gap-6',
+  button: 'w-full h-full object-cover rounded-full',
+  loading: 'flex flex-col items-center justify-center h-screen',
+};
+
+export const LOGIN_ERROR_FALLBACK_STYLE = {
+  container: 'flex flex-col items-center justify-center min-h-screen p-4',
+  title: 'text-2xl font-bold mb-4',
+  paragraph: 'text-red-500 mb-8',
+  button: 'px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600',
+};
+
+export const SORT_MODAL_STYLE = {
+  backdrop: 'fixed inset-0 z-50 flex items-end justify-center bg-black/50',
+  modal:
+    'w-full max-w-[720px] p-4 bg-white rounded-t-xl shadow-lg animate-slide-up min-h-[40vh] flex flex-col',
+  header: 'flex justify-between items-center mb-4',
+  title: 'text-lg font-semibold',
+  content: 'space-y-4 flex-grow py-4',
+  label: 'flex items-center justify-between w-full',
+  input: 'accent-purple-500 w-5 h-5',
+  divider: 'mt-6 pt-4 border-t-2 flex space-x-2',
+  cancelButton: 'flex-1 py-2 bg-gray-200 text-gray-600 rounded-md',
+  applyButton: 'flex-1 py-2 bg-purple-600 text-white rounded-md',
+};
+
+export const FILTER_MODAL_STYLE = {
+  backdrop: 'fixed inset-0 z-50 flex items-end justify-center bg-black/50',
+  modal:
+    'relative w-full max-w-[720px] bg-white rounded-t-xl shadow-lg p-4 animate-slide-up flex flex-col min-h-[50vh]',
+  header: 'flex justify-between items-center mb-4',
+  title: 'text-lg font-semibold',
+  content: 'space-y-16 py-2 flex-grow overflow-y-auto',
+  sectionTitle: 'font-semibold mb-2',
+  checkboxLabel: 'flex py-1 justify-between w-full',
+  checkbox: 'accent-purple-500 w-5 h-5',
+  footer: 'mt-6 pt-4 border-t-2 flex space-x-2',
+  resetButton: 'flex-1 py-2 bg-gray-200 text-gray-600 rounded-md',
+  applyButton: 'flex-1 py-2 bg-purple-600 text-white rounded-md',
+};
+
+export const SIGNUP_PAGE_STYLE = {
+  container: 'max-w-md mx-auto mt-24 p-6',
+  progressBarbox: 'w-full h-1 bg-gray-2,00 rounded-full mb-10',
+  progressBar: 'h-1 w-1/2 bg-purple-500 rounded-full',
+  progressBarComplete: 'h-1 bg-purple-500 rounded-full',
+  h2: 'text-lg font-bold mb-10 text-left',
+  form: 'mb-10',
+  label: 'block text-sm font-medium text-gray-700 mb-2',
+  input:
+    'w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500',
+  button:
+    'w-full py-4 bg-purple-600 text-white font-bold rounded-md hover:bg-purple-700 transition disabled:opacity-50',
+  errorMessage: 'text-sm text-red-500 mt-2 h-[20px]',
+  contentBox: 'flex flex-col items-center justify-center flex-1 py-12',
+  checkIconCircle:
+    'w-16 h-16 rounded-full bg-purple-500 flex items-center justify-center mb-6',
+  checkIcon: 'w-8 h-8 text-white',
+  paragraph: 'text-center text-base font-medium',
+  bold: 'font-bold',
+};
+
+export const INPUT_WITH_BUTTON_STYLE = {
+  container: 'py-4 pb-2 flex gap-2',
+  input:
+    'w-full rounded-xl text-lg px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500',
+  button:
+    'bg-purple-600 text-white font-bold rounded-md w-24 h-11 hover:bg-purple-700 transition',
+};
+
+export const SUBSCRIPTION_PAGE_STYLE = {
+  itemList: 'space-y-4 overflow-y-auto scrollbar-hide',
+  paragraph: 'text-center text-m text-gray-500 mt-4 mb-2',
+  bold: 'font-bold',
+  boldWithColor: 'text-purple-500 font-semibold',
+  chzzk: 'font-semibold text-green-500',
+  youtube: 'font-semibold text-red-500',
+};
+
+export const SUBSCRIPTION_ITEM_STYLE = {
+  container: 'flex flex-col gap-1 p-4 rounded-xl shadow-sm border bg-white',
+  box: 'flex items-start justify-between',
+  leftBox: 'flex flex-col',
+  rightBox: 'flex items-center gap-2',
+  channel: 'font-semibold',
+  platform: 'text-sm text-gray-600',
+  dateText: 'text-xs text-gray-400',
+  deleteButton:
+    'w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center hover:scale-110 hover:shadow-xl transition-transform duration-200',
+  deleteIcon: 'w-6 h-6 text-red-600 stroke-[2.5]',
+};
+
+export const MODAL_STYLE = {
+  backdrop: 'fixed inset-0 z-50 flex items-center justify-center bg-black/50',
+  container: 'bg-white rounded-xl p-6 w-80 text-center shadow-lg',
+  message: 'mb-4',
+  button:
+    'px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition',
+  buttonGroup: 'flex justify-center gap-4',
+  cancelButton:
+    'px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500 transition',
+};
+
+export const ERROR_FALLBACK_STYLE = {
+  container: 'w-screen h-screen flex items-center justify-center',
+  box: 'flex flex-col items-center justify-center bg-red-50 min-w-[60vh] min-h-[60vh] p-8 text-center text-red-800 rounded-lg shadow-md',
+  statusText: 'text-5xl font-bold mb-4',
+  messageText: 'text-xl font-semibold mb-2',
+  subText: 'text-sm text-gray-600 mb-6 font-bold',
+  homeButton:
+    'mt-2 px-4 py-2 rounded-md bg-red-600 text-white font-medium hover:bg-red-700 transition',
+};
